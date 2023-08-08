@@ -103,10 +103,10 @@ WSGI_APPLICATION = 'excelsior.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'excelroyal',
-        'USER': 'root',
+        'NAME': 'esomchi$excelroyal',
+        'USER': 'esomchi',
         'PASSWORD': 'excelsior',
-        'HOST': 'localhost',
+        'HOST': 'esomchi.mysql.pythonanywhere-services.com',
         'PORT': '3306'
     }
 }
