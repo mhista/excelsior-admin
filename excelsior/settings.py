@@ -88,7 +88,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'excelsior.wsgi.application'
-
+# git token
+# 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 
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -99,6 +100,16 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'parizian',
+#         'USER': 'root',
+#         'PASSWORD': '@Diwe07068884102',
+#         'HOST': 'localhost',
+#         'PORT': '3306'
+#     }
+# }
 
 
 # Password validation
