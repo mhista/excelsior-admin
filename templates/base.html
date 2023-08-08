@@ -1,0 +1,135 @@
+{% load static %}
+<!doctype html>
+<html class="no-js " lang="en">
+
+<!-- Mirrored from thememakker.com/templates/oreo/university/html/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 24 May 2023 13:27:52 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+<title>:: Oreo Bootstrap4 Admin ::</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+<!-- Dropzone Css -->
+
+<link rel="stylesheet" href= {%  static "assets/plugins/bootstrap/css/bootstrap.min.css" %}>
+<link rel="stylesheet" href= {%  static "assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css" %}/>
+<link rel="stylesheet" href= {%  static "assets/plugins/morrisjs/morris.min.css" %} />
+<link href={% static "assets/plugins/dropzone/dropzone.css" %} rel="stylesheet">
+<!-- Bootstrap Material Datetime Picker Css -->
+<link href={% static "assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" %} rel="stylesheet" />
+<link href={% static "assets/plugins/bootstrap-select/css/bootstrap-select.css" %} rel="stylesheet" />
+<!-- Custom Css -->
+<link rel="stylesheet" href={% static "assets/plugins/light-gallery/css/lightgallery.css" %}>
+
+<link rel="stylesheet" href= {%  static "assets/css/main.css" %}>
+<link rel="stylesheet" href= {%  static "assets/css/color_skin.css" %}>
+<link rel="stylesheet" href= {%  static "assets/css/bloG.css" %}>
+
+</head>
+
+<body class="theme-blush">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src= {%  static "assets/images/school/excelogo.png" %} width="48" height="48" alt="excelsior"></div>
+        <p>Please wait...</p>        
+    </div>
+</div>
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+{% include "navbar.html" %}
+{% include "rl.html" %}
+<!-- Chat-launcher -->
+<div class="chat-launcher"></div>
+<div class="chat-wrapper">
+    <div class="card">
+        <div class="header">
+            <ul class="list-unstyled team-info margin-0">
+                <li class="m-r-15"><h2>Pro. Team</h2></li>
+                <li>
+                    <img src= {%  static "assets/images/xs/avatar2.jpg" %} alt="Avatar">
+                </li>
+                <li>
+                    <img src= {%  static "assets/images/xs/avatar3.jpg" %} alt="Avatar">
+                </li>
+                <li>
+                    <img src= {%  static "assets/images/xs/avatar4.jpg" %} alt="Avatar">
+                </li>
+                <li>
+                    <img src= {%  static "assets/images/xs/avatar6.jpg" %} alt="Avatar">
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="Add Member"><i class="zmdi zmdi-plus-circle"></i></a>
+                </li>
+            </ul>                       
+        </div>
+        <div class="body">
+            <div class="chat-widget">
+            <ul class="chat-scroll-list clearfix">
+                <li class="left float-left">
+                    <img src= {%  static "assets/images/xs/avatar3.jpg" %} class="rounded-circle" alt="">
+                    <div class="chat-info">
+                        <a class="name" href="javascript:void(0);">Alexander</a>
+                        <span class="datetime">6:12</span>                            
+                        <span class="message">Hello, John </span>
+                    </div>
+                </li>
+                <li class="right">
+                    <div class="chat-info"><span class="datetime">6:15</span> <span class="message">Hi, Alexander<br> How are you!</span> </div>
+                </li>
+                <li class="right">
+                    <div class="chat-info"><span class="datetime">6:16</span> <span class="message">There are many variations of passages of Lorem Ipsum available</span> </div>
+                </li>
+                <li class="left float-left"> <img src= {%  static "assets/images/xs/avatar2.jpg" %} class="rounded-circle" alt="">
+                    <div class="chat-info"> <a class="name" href="javascript:void(0);">Elizabeth</a> <span class="datetime">6:25</span> <span class="message">Hi, Alexander,<br> John <br> What are you doing?</span> </div>
+                </li>
+                <li class="left float-left"> <img src= {%  static "assets/images/xs/avatar1.jpg" %} class="rounded-circle" alt="">
+                    <div class="chat-info"> <a class="name" href="javascript:void(0);">Michael</a> <span class="datetime">6:28</span> <span class="message">I would love to join the team.</span> </div>
+                </li>
+                    <li class="right">
+                    <div class="chat-info"><span class="datetime">7:02</span> <span class="message">Hello, <br>Michael</span> </div>
+                </li>
+            </ul>
+            </div>
+            <div class="input-group p-t-15">
+                <input type="text" class="form-control" placeholder="Enter text here...">
+                <span class="input-group-addon">
+                    <i class="zmdi zmdi-mail-send"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+{% block content %}
+    
+{% endblock content %}
+    
+
+
+
+<!-- Jquery Core Js --> 
+<script src= {%  static "assets/js/pages/jquery-3.5.1.min.js" %} ></script>
+<script src= {%  static "assets/bundles/libscripts.bundle.js" %}></script> <!-- Lib Scripts Plugin Js ( jquery.v3.2.1, Bootstrap4 js) --> 
+<script src= {%  static "assets/bundles/vendorscripts.bundle.js" %}></script> <!-- slimscroll, waves Scripts Plugin Js -->
+
+<script src= {%  static "assets/bundles/morrisscripts.bundle.js" %}></script><!-- Morris Plugin Js -->
+<script src= {%  static "assets/bundles/jvectormap.bundle.js" %}></script> <!-- JVectorMap Plugin Js -->
+<script src= {%  static "assets/plugins/jvectormap/jquery-jvectormap-us-aea-en.js" %}></script><!-- USA Map Js -->
+<script src= {%  static "assets/bundles/knob.bundle.js" %}></script> <!-- Jquery Knob, Count To, Sparkline Js -->
+<script src={%  static "assets/plugins/light-gallery/js/lightgallery-all.min.js" %}></script> 
+<script src= {%  static "assets/bundles/mainscripts.bundle.js" %}></script>
+<script src= {%  static "assets/js/pages/index.js" %}></script>
+<script src={%  static "assets/js/pages/medias/image-gallery.js" %}></script
+
+
+{% block extrascript %}
+    
+{% endblock extrascript %}
+    
+</body>
+    
+<!-- Mirrored from thememakker.com/templates/oreo/university/html/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 24 May 2023 13:27:52 GMT -->
+</html>
+
+

@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="content">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <h2>Courses info
+                <small>Welcome to Excelsior</small>
+                </h2>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">                
+                <button class="btn btn-white btn-icon btn-round float-right m-l-10" type="button">
+                    <i class="zmdi zmdi-plus"></i>
+                </button>
+                <ul class="breadcrumb float-md-right">
+                    <li class="breadcrumb-item"><a href="index-2.html"><i class="zmdi zmdi-home"></i> Oreo</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">Courses</a></li>
+                    <li class="breadcrumb-item active">info</li>
+                </ul>                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <div class="body">
+                        <img src= "{{ student.get_image }}" alt=""  class="img-fluid rounded m-b-20">
+                        <h6>{{student.full_name}}</h6>
+                        <div class="table-responsive">
+                            <table class="table table-hover m-t-20">
+                                <tbody>
+                                    <tr>
+                                        <td>Grade</td>
+                                        <td>{{grade}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fees paid</td>
+                                        <td><strong class="col-blush">$0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teacher</td>
+                                        <td><strong>{{ student.get_teacher }}</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reg</td>
+                                        <td><strong class="col-green">{{student.reg_number}}</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="courses-info.html" class="btn btn-block btn-raised btn-primary btn-round waves-effect" role="button">Pay School Fees</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <div class="card">
+                    <div class="body">
+                        <ul class="nav nav-tabs padding-0">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Details">Assignments</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Structure">Check Results</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Gallery">Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="Details">
+                        <div class="card">
+                            <div class="body">
+                                <h6>Assignments</h6>
+                                                            
+                                <h6>Study Options</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>duration</th>
+                                                <th>Score</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Assignment 1</td>
+                                                <td>5th may</td>
+                                                <td>81</td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Structure">
+                        <div class="card">
+                            <div class="body">
+                                <h6>Results</h6>                                
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Grade</th>
+                                                <th>Position</th>
+                                                <th>Average</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bsc (Hons)</td>
+                                                <td>3 years full time</td>
+                                                <td>CDX3</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>                                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Gallery">
+                        <div class="tab-pane body" id="Account">
+                            
+                            <hr>
+                            <div class="row clearfix">
+                                <div class="col-md-4 workingtime">
+                                    <h6>Name</h6>
+                                    <small class="text-muted">Diwe Innocent</small>
+                                    <hr>
+                                </div>
+                
+                                <div class="col-md-4 workingtime">
+                                    <h6>State of Origin</h6>
+                                    <small class="text-muted">Imo State</small>
+                                    <hr>
+                                </div>
+                                <div class="col-md-4 workingtime">
+                                    <h6>Date Of Birth</h6>
+                                    <small class="text-muted">Date of Birth</small>
+                                    <hr>
+                                </div>
+                                <div class="col-md-4 workingtime">
+                                    <h6>City</h6>
+                                    <small class="text-muted">City</small>
+                                    <hr>
+                                </div>
+                                <div class="col-md-4 workingtime">
+                                    <h6>Country</h6>
+                                    <small class="text-muted">Country</small>
+                                    <hr>
+                                </div>
+                            </div>
+
+                          
+                        
+                        </div>                        
+                    </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</section>
+{% endblock content %}
+
+    
+
