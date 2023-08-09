@@ -3,10 +3,10 @@
 
 <nav class="navbar p-l-5 p-r-5">
    
-    <ul class="nav navbar-nav navbar-left">
+    <ul class="nav navbar-nav navbar-left d-flex-inline">
         <li>
             <div class="navbar-header pt-1 pb-1">
-                <a href="javascript:void(0);" class="bars float-right"></a>
+                <a href="javascript:void(0);" class="zmdi zmdi-menu barss"></a>
                 <a class="navbar-brand" href="{% url 'student:index' %}"><img src= {%  static "assets/images/school/excelogo.png" %} width="50" alt="Excelsior"><span class="m-l-10 text-light">Excelsior Royal</span></a>
             </div>
             
@@ -17,15 +17,11 @@
        
             </a>
         </li>
- 
-        <!-- <li>
-            <div class="input-group">                
-                <input type="text" class="form-control text-info" placeholder="greatness begins here...">
-                <span class="input-group-addon">
-                   
-                </span>
-            </div>
-        </li>       -->
+        <!-- <li class="navbar-header social_share">                            
+            <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i class="zmdi zmdi-facebook"></i></button>
+            <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i class="zmdi zmdi-twitter"></i></button>
+            <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i class="zmdi zmdi-instagram"></i></button>
+        </li> -->
         <li class="">
             
             <a href="sign-in.html" class="" data-close="true" style="font-size
@@ -33,9 +29,14 @@
            
         </li>  
         <li class="float-right">
-            
-            <a href="sign-in.html" class="mega-menu" data-close="true" style="font-size
-            :large; font-weight:bolder;">Portal</i></a>
+            <a href="#" class="mega-menu" data-close="true" style="font-size
+            :large; font-weight:bolder;"><i class="zmdi zmdi-phone active"></i></a>
+            <a href="#" class="mega-menu" data-close="true" style="font-size
+            :large; font-weight:bolder;"><i class="zmdi zmdi-facebook"></i></a>
+            <a href="#" class="mega-menu" data-close="true" style="font-size
+            :large; font-weight:bolder;"><i class="zmdi zmdi-twitter"></i></a>  
+            <a href="#" class="mega-menu" data-close="true" style="font-size
+            :large; font-weight:bolder;"><i class="zmdi zmdi-instagram"></i></a>
            
         </li>
     </ul>
