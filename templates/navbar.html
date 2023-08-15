@@ -7,7 +7,7 @@
         <li>
             <div class="navbar-header pt-1 pb-1">
                 <a href="javascript:void(0);" class="zmdi zmdi-menu barss"></a>
-                <a class="navbar-brand" href="{% url 'student:index' %}"><img src= {%  static "assets/images/school/excelogo.png" %} width="50" alt="Excelsior"><span class="m-l-10 text-light">Excelsior Royal</span></a>
+                <a class="navbar-brand" href="{% url 'department:index' %}"><img src= {%  static "assets/images/school/excelogo.png" %} width="50" alt="Excelsior"><span class="m-l-10 text-light">Excelsior Royal</span></a>
             </div>
             
         </li>
@@ -24,7 +24,7 @@
         </li> -->
         <li class="">
             
-            <a href="sign-in.html" class="" data-close="true" style="font-size
+            <a href="{% url 'department:about' %}" class="" data-close="true" style="font-size
             :large; font-weight:bolder;">About Us</i></a>
            
         </li>  

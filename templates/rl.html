@@ -2,7 +2,7 @@
 <!-- Left Sidebar -->
 <aside id="leftsidebar" class="sidebar">
     <ul class="nav nav-tabs">
-        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="{% url 'student:index' %}"><i class="zmdi zmdi-home"></i></a></li>
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="{% url 'department:index' %}"><i class="zmdi zmdi-home"></i></a></li>
         <li class="nav-item"><a class="nav-link text-info" data-toggle="tab" href="#">sign-in</a></li>
     </ul>
     <div class="tab-content">
@@ -11,7 +11,7 @@
                 <ul class="list">
                     <li>
                         <div class="user-info">
-                            <div class="image"><a href="{% url 'student:index' %}"><img src= {%  static "assets/images/school/excelogo.png" %} alt="User"></a></div>
+                            <div class="image"><a href="{% url 'department:index' %}"><img src= {%  static "assets/images/school/excelogo.png" %} alt="User"></a></div>
                             <div class="detail">
                                 <h4>Excelsior</h4>
                                 <small>Greatness begins here</small>
@@ -19,7 +19,8 @@
                         </div>
                     </li>
                     <li class="header">MAIN</li>
-                    <li class="active open"><a href="{% url 'student:index' %}"><i class="zmdi zmdi-home"></i><span>Home</span></a></li>
+                    <li class="active open"><a href="{% url 'department:index' %}"><i class="zmdi zmdi-home"></i><span>Home</span></a></li>
+                    <li class="open"><a href="{% url 'department:about' %}"><i class="zmdi zmdi-accounts-alt"></i><span>About Us</span></a></li>
                     <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts-outline"></i><span>Students</span> </a>
                         <ul class="ml-menu">
                             <li><a href="{% url 'student:create-student' %}">Register Student</a></li>
@@ -32,7 +33,7 @@
                     </li>
                     <li class="open"><a href="#"><i class="zmdi zmdi-folder"></i><span>Check Results</span></a></li>
                     <!-- <li class="open"><a href="#"><i class="zmdi zmdi-accounts-alt"></i><span>Admins office</span></a></li> -->
-                    <li class="open"><a href="#"><i class="zmdi zmdi-accounts-alt"></i><span>About</span></a></li>
+                    <!-- <li class="open"><a href="#"><i class="zmdi zmdi-accounts-alt"></i><span>About</span></a></li> -->
                     <li><a href="parents.html"><i class="zmdi zmdi-folder"></i><span>Gallery</span> </a></li>    
                     <li><a href="noticeboard.html"><i class="zmdi zmdi-alert-circle"></i><span>News & Events</span> </a></li>
                     <li><a href="library.html"><i class="zmdi zmdi-book"></i><span>Library</span> </a></li>

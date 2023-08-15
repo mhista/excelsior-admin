@@ -9,7 +9,7 @@ from  django.http import JsonResponse
 from school.models import Data
 
 class IndexView(generic.TemplateView):
-    template_name = "index-2.html"
+    template_name = "about.html"
     
 class CreateStudent(CreateUpdateStudent,generic.View):
     def get(self,*args,**kwargs):

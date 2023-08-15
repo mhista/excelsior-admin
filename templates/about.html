@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+<style>
+    .meta{list-style:none;padding:0;margin:0}
+    .meta li{
+        display:inline-block;margin-right:15px
+    }
+    .meta li a{font-style:italic;color:#959595;text-decoration:none;font-size:12px}
+    .meta li a i{margin-right:6px;font-size:12px}
+   .bg-p-p, .bg-p{
+    border-radius: 10px;
+    outline: none;
+    border: none;}
+    .text_info{
+        color:#ff9800;
+    }
+    .p-edit{
+        margin: 12px 0;
+    }
+    .reg{
+        color:#ff9800 !important;
+        border-color: #ff9800 !important;
+    }
+    .reg2{
+        color:#2ca8ff !important;
+        border-color: #2ca8ff !important;
+    }
+    .core li{
+        padding-bottom: 1rem;
+    }
+</style>  
+<!-- Main Content -->
+
+<section class="content blog-page">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-7 col-md-5 col-sm-12 pt-0">
+                <h2>Excelsior <span class="reg">Royal</span>
+                <small>Greatness Begins Here</small>
+                </h2>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <ul class="breadcrumb float-md-right">
+                <li class="breadcrumb-item"><a href="{% url 'department:index' %}"><i class="zmdi zmdi-home"></i> </a></li>
+                <li class="breadcrumb-item"><a href="{% url 'department:index' %}">Home</a></li>
+
+                </ul>
+
+                <ul class="breadcrumb float-right d-md-none">
+                <li class="breadcrumb-item"><a href="javascript:void(0);"><i class="zmdi zmdi-menu barss"></i> </a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12col-md-12 left-box">
+                <div class="card single_post">
+                    <div class="body">
+                        <h3 class="m-t-0 m-b-5"><a href="blog-details.html"></a></h3>
+                        <ul class="meta">
+                            <li><a href="javascript:void(0);" class="re"><i class="zmdi zmdi-accounts-alt col-blue reg"></i> Explore our mission, vision and core-values</a></li>
+                        </ul>
+                    </div>                    
+                    <div class="body">
+                        <div class="img-post m-b-15">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" src={% static "assets/images/school/building.jpeg" %} alt="First slide">
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                            <p class="mb-5"> <a href="#" style="font: large bolder;" class=""> Excelsior Royal</a> School is a Pre-School Nursery, Primary school located in Owerri Nigeria. A privately owned educational institution that provides unparallel quality education for children between early childhood and formation years.
+
+                            The world in her 21st century of existence, with uncommon discoveries development and drive to outwit each other amongst people, nations, religious and  continents of the world,  holds in their policy and police that prove that education is the one key tool, medium and proven method of any level of  success of they have achieved.
+                            
+                            At Excelsior Royal School, we have the undisputable and uncompromising believe that your child holds the key to unlock the door that will lead people, nations regions and continents of the world to the next era of human successful existence.
+                            
+                            We therefore welcome you, your child/ward to the place of self fulfillment and relevance on the world’s stage Excelsior Royal School
+                            </p>    
+
+                             <!-- intro ends -->
+                             <div class="row mb-3 mb-md-5">
+                                <div class="img-post m-b-15 col-md-6 d-md-none">
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="d-block img-fluid" src={% static "assets/images/school/class2.jpeg" %} alt="First slide">
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div> 
+                                <p class="mt-0 mb-5 col-md-6 pt-md-5">
+                                    <span class="mb-0 reg h3">OUR MISSION</span> <br>         
+        
+                                   “Our mission is to show care give quality education and build skills for a lifelong leaving, while creating an environment for self discovery, harnessing talent, inculcating the fear of God, respect for rule of law and order and safety for every child.”
+                                    </p> 
+                                <div class="img-post m-b-15 col-md-6 d-none d-md-block">
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="d-block img-fluid" src={% static "assets/images/school/class2.jpeg" %} alt="First slide">
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div> 
+                             
+                            </div>
+                          
+                            <!-- mission ends -->
+                            <div class="row mb-3 mb-md-5">
+                            <div class="img-post m-b-15 col-md-6">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src={% static "assets/images/school/maths.jpeg" %} alt="First slide">
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>           
+                            <p class="mt-0 mb-5 col-md-6 pt-md-5">
+                                
+                            <span class="mb-0 reg h3">OUR VISION</span><br>
+                            “Our vision is to build a democratic community of children who have positive attitude, values of justice, tolerance, co-operation and equity, where every child is stimulated and motivated to discover themselves, harness their potentials to the fullest, encouraged to become confident, responsible, active and functional contributors towards Global citizenship by employing the services of well motivated staff and best technology.”
+                            </p>  
+                            </div>   
+                            <!-- vision ends -->
+                          
+                            <div class="row ">
+                                <div class="img-post m-b-15 col-md-6 d-md-none">
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="d-block img-fluid" src={% static "assets/images/school/log.jpeg" %} alt="First slide">
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>  
+                                <div class="col-md-6">
+                                    <span class="mb-0 reg h3">OUR CORE VALUES</span><br>           
+                                    <ul class="core mb-5">
+                                        <li>E: fficiency</li>
+                                        <li>X: X-pertise</li>
+                                        <li>C: Character</li>
+                                        <li>E: Energy</li>
+                                        <li>E: Loyalty</li>
+                                        <li>S: Selflessness</li>
+                                        <li>I: Integrity</li>
+                                        <li>O: Openness</li>
+                                        <li>R: Respect</li>
+                                    </ul>
+                                </div>
+                                <div class="img-post m-b-15 col-md-6 d-none d-md-block">
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="d-block img-fluid" src={% static "assets/images/school/log.jpeg" %} alt="First slide">
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                          
+                            <!-- core ends -->
+                            <span class="mb-0 reg h3">TECH-TEACHING TECH-LEARNING </span> <br>             
+                            <p class="mt-0 mb-5 pb-0">
+                                    Technology approach to teaching and learning has come to stay in the information age. Our classrooms have installed technology based teaching and learning gadget that makes it fit into an information age educational classroom. Gadgets like;
+                                    <ul class="core">
+                                        <li>CCTV Cameras</li>
+                                        <li>Interactive board</li>
+                                        <li>Internet services system</li>
+                                        <li>Laptops</li>
+                                        <li>Smart TV</li>
+                                    </ul>          
+                            </p> 
+                            <!-- tech ends -->
+                            <span class="mb-0 reg h3">TRANSPORT/LOGISTICS</span> <br>            
+                            <p class="mt-0 mb-5">
+                                The school’s management sees the need for easy movement, accessibility and challenge working class parents go through to get their wards to school; taking this to key cognizance, the school provides a school run service that has a fleet of school buses that are conducive, secured, road worthy and driven by experienced, licensed and professional chauffeurs.
+                            </p> 
+                            <!-- TRANSPORT ENDS -->
+                            <span class="mb-0 reg h3">TEACHING AND NON-TEACHING STAFF</span>  <br>           
+                            <p class="mt-0 mb-5">          
+                            Raising children needs the best of hands in schools. Teaching and Non-teaching staff makes up the formation of team that can help children succeed. We therefore have a team of well motivated, trained, certified and equipped staff who love children and are experienced in the business of educating children.
+                            </p> 
+                            <!-- TEACHING ENDS -->
+                            <span class="mb-0 reg h3">PRE-SCHOOL AND NURSERY</span><br>       
+                            <p class="mt-0 mb-5 pb-0">  
+                                Pre-School and Nursery education is as important as any level of formal education, it is with this understanding that Pre-School/Nursery education is being handled using the best of
+                                <ul class="core pt-0">
+                                    <li>Play toys</li>
+                                    <li>Learning enhancement gadgets</li>
+                                    <li>Manipulative materials</li>
+
+                                </ul>
+                                Children in Pre-School and Nursery engage in activities meant to enhance their sensory skill and motor skills.
+                            </p> 
+                            <!-- PRE SCHOOL ENDS -->
+                            <span class="mb-0 reg h3"></span><br>        
+                            <ul class="core mb-5">
+                                    <li>Chess and Scrable</li>
+                                    <li>Taikwondo</li>                                    
+                                    <li>Dance</li>                                    
+                                    <li>Music </li>                                  
+                                   <li> Home makers</li>                                 
+                                    <li>Cub scout    </li>                                
+                                   <li> Coding and robotics</li>
+                                
+                                
+                            </ul>
+                            
+                            <div>
+
+                            </div>
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+</section>
+{% endblock content %}
